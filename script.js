@@ -1,8 +1,8 @@
 var canvas = document.getElementById('canvas'); //присваиваем переменной значение элемента странницы
-var ctx = canvas.getContext('2d');
+var ctx = canvas.getContext('2d'); //контекст
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = window.innerHeight; 
+canvas.height = window.innerHeight; //наш канвас будет квадратный, со стороной равной высоте окна
 
 
 
@@ -42,7 +42,7 @@ var Circle = function (x, y, r, dx, dy, color) {
 	return this;
 };
 
-var a = new Circle(400, 150, 20, 5, 3);
+var a = new Circle(300, 150, 20, 5, 3);
 
 function mainLoop() {
 	a.move();
@@ -63,4 +63,4 @@ function circleMove() {
 
 	a.drawRect(ctx);
 }
-//setInterval(circleMove, 1000 / 45);	//	45 FPS
+setInterval(circleMove, 1000 / 45);	//	45 FPS

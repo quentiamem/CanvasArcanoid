@@ -1,4 +1,5 @@
 BODY, HTML {
+	background-color: #afa;
 	margin: 0;
 	padding: 0;
 }
@@ -6,4 +7,5 @@ BODY, HTML {
 canvas {
 	background-color: #000;
 	display: block;
+	margin: 0 auto;
 }
